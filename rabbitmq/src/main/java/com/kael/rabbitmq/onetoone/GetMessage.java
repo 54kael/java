@@ -1,4 +1,4 @@
-package com.kael.rabbitmq.direct;
+package com.kael.rabbitmq.onetoone;
 
 import com.kael.rabbitmq.util.RabbitMqUtil;
 import com.rabbitmq.client.*;

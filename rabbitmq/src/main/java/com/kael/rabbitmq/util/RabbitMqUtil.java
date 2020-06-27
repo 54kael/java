@@ -12,7 +12,7 @@ public class RabbitMqUtil {
     private static final ConnectionFactory connectionFactory;
     static {
         connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("192.168.3.2");
+        connectionFactory.setHost("localhost");
         connectionFactory.setPort(5672);
         connectionFactory.setVirtualHost("/ems");
         connectionFactory.setUsername("kael");

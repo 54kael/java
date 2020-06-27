@@ -12,7 +12,7 @@ public class SendMessageTest {
     @Test
     public void sendTest() throws IOException, TimeoutException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("192.168.3.2");
+        connectionFactory.setHost("192.168.1.101");
         connectionFactory.setPort(5672);
         connectionFactory.setVirtualHost("/ems");
         connectionFactory.setUsername("kael");
