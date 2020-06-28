@@ -13,11 +13,11 @@ public class GetMessage {
 
     public static void getMessage() throws IOException, TimeoutException {
         Connection connection = RabbitMqUtil.getConnection();
-        // 获取通道
+        // 建立通道
         Channel channel = connection.createChannel();
 
         /**
-         * 通道绑定对应消息队列
+         * 声明队列
          * 参数1：队列名称（没有就自动创建）
          * 参数2：队列是否持久化
          * 参数3：是否独占队列(当前队列只能被这个连接使用)
